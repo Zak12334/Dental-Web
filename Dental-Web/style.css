@@ -1,0 +1,614 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+header {
+    width: 100%;
+    position: relative;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #111111;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.nav-links a {
+    margin-right: 50px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+}
+
+.slider-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    background-size: cover;
+    background-position: center;
+    padding: 350px;
+    background-color: #f4f4f4;
+    border-radius: 25px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.slider-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5); 
+    padding: 20px;
+    border-radius: 25px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    max-width: 80%;
+}
+
+.slider-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.slider-text p {
+    font-size: 1.2rem;
+}
+
+
+@media screen and (max-width: 768px) {
+    .slider-text h1 {
+        font-size: 2rem;
+    }
+
+    .slider-text p {
+        font-size: 1rem;
+    }
+
+    .slider-image {
+        height: 400px;
+    }
+}
+.promo-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 25px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.promo-text {
+    flex-basis: 50%;
+}
+
+.promo-text h2 {
+    color: #333;
+    font-size: 2rem;
+}
+
+.promo-text .price {
+    color: #333;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.promo-text .offer {
+    color: #16a085;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.promo-buttons .btn {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px; 
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+
+.btn-primary {
+    background-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+}
+
+.btn-secondary:hover {
+    background-color: #545b62;
+}
+
+.promo-image {
+    flex-basis: 50%;
+    text-align: right;
+    overflow: hidden; 
+}
+
+.promo-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 25px; 
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .promo-section {
+        flex-direction: column;
+    }
+
+    .promo-text, .promo-image {
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    .promo-image img {
+        margin-top: 20px;
+    }
+}
+
+
+.free-consultation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white; 
+    background-position: 50% 25%;
+    background-image: url('images/cons.jpg'); 
+    padding: 150px;
+    background-color: #f4f4f4;
+    border-radius: 25px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /
+}
+
+.consultation-content {
+    max-width: 1200px;
+    position: relative;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 20px; 
+    border-radius: 25px; 
+}
+
+.consultation-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: white; 
+}
+
+.consultation-content p {
+    font-size: 1.2rem;
+    color: white;
+}
+
+.btn-blue {
+    background-color: #0056b3;
+    padding: 10px 25px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn-blue:hover {
+    background-color: #003d82;
+}
+
+footer {
+    background-color: #111111;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: auto;
+    
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.footer-content p {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.services-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2rem;
+    
+}
+
+.service {
+    width: calc(33.333% - 40px); 
+    margin: 20px;
+    text-align: center;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.service img {
+    width: 120px; 
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.service h3 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.service-description {
+    min-height: 100px;
+    display: none;
+    padding: 0 1rem;
+    transition: max-height 0.3s ease-in-out; 
+}
+
+
+.service:hover .service-description {
+    display: -webkit-box;
+    -webkit-line-clamp: 3; 
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.service-description p {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.social-media a {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.social-media img {
+    width: 30px; 
+    height: auto;
+    vertical-align: middle;
+}
+
+.about-section .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.about-info {
+    flex: 1;
+    padding: 20px; 
+    background-color: #ffffff; 
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center; 
+}
+
+.about-info h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about-info p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #555;
+}
+
+.about-image {
+    flex: 1;
+    text-align: center;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.doctors-section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px; 
+    padding: 50px 0; 
+    max-width: 1200px; 
+    margin: auto; 
+}
+
+.doctor-card {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.doctor-card img {
+    width: 80%;
+    height: auto;
+    margin: 0 auto; 
+    border-radius: 50%; 
+    margin-bottom: 20px;
+}
+
+.team-heading {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #333;
+    font-weight: bold;
+}
+
+#appointment-form {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+#appointment-form {
+    max-width: 600px;
+    margin: 0 auto; 
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#appointment-form label {
+    display: block;
+    margin-top: 10px;
+    color: #333;
+}
+
+
+.confirmation-message {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    padding: 50px;
+    text-align: center;
+    background-color: #e8f5e9; 
+    border: 1px solid #c8e6c9; 
+    border-radius: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    z-index: 999; 
+    left: auto; 
+    right: 50px;
+}
+
+.confirmation-message h2 {
+    color: #2e7d32; 
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+.confirmation-message p {
+    color: #2e7d32;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.confirmation-message .btn {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #007bff;
+    transition: background-color 0.3s ease;
+}
+
+.confirmation-message .btn:hover {
+    background-color: #0056b3;
+}
+
+
+
+#appointment-form input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+#appointment-form button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 20px;
+    cursor: pointer;
+    width: 100%;
+}
+
+#appointment-form button:hover {
+    background-color: #0056b3;
+}
+#appointment-form button:hover {
+    background-color: #0056b3;
+}
+
+.contact-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+    gap: 30px; 
+}
+
+.contact-info {
+    flex-basis: 40%;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info li {
+    margin-bottom: 10px;
+}
+
+.contact-form {
+    flex-basis: 50%;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+}
+
+#contact-form label {
+    margin-top: 40px;
+}
+
+#contact-form input,
+#contact-form textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px; 
+}
+
+#contact-form textarea {
+    height: 150px; 
+    resize: vertical; 
+
+}
+#contact-form button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 0; 
+}
+
+
+#contact-form button:hover {
+    background-color: #0056b3;
+}
+
+@media screen and (max-width: 1200px) {
+    .doctors-section {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .doctors-section {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .doctors-section {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about-section .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-info, .about-image {
+        padding: 20px;
+    }
+
+    .about-image {
+        order: -1; 
+}
+
+
+
+@media screen and (max-width: 768px) {
+    
+}
+}
