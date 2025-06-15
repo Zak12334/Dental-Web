@@ -34,6 +34,3 @@ A modern, responsive dental clinic website for Blackrock Dental Care, built usin
 - Icons and images are for demonstration purposes.
 - Developed as a sample project for a dental clinic website.
 
----
-
-© 2023 Blackrock Dental Care. All rights reserved.
